@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
            color: Colors.red,
            width: 150,
            height: 50,
-           child: Text(
-            "Ini adalah text fluter widget.",
-            textAlign: TextAlign.center,
+           child: Text("Ini adalah text fluter widget.",
+            maxLines: 2, 
+            overflow: TextOverflow.ellipsis,
+            softWrap: false,
             ))),
       )
     );
